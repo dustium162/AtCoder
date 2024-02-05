@@ -1,0 +1,229 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  Exclude:
+    - 'lib_lock/ac-library-rb/*.rb'
+
+## Layout
+
+Layout/ExtraSpacing:
+  AutoCorrect: false
+  Exclude:
+    - 'ac-library-rb.gemspec'
+    - 'test/convolution_test.rb'
+Layout/SpaceAroundOperators:
+  Exclude:
+    - 'ac-library-rb.gemspec'
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+Layout/SpaceInsideArrayLiteralBrackets:
+  AutoCorrect: false
+  Exclude:
+    - 'test/convolution_test.rb'
+Layout/SpaceInsideRangeLiteral:
+  Enabled: false
+
+## Lint
+
+Lint/AmbiguousOperator:
+  AutoCorrect: false
+  Exclude:
+    - 'test/lazy_segtree_test.rb'
+    - 'test/example/crt.rb'
+Lint/AmbiguousBlockAssociation:
+  AutoCorrect: false
+  Exclude:
+    - 'bin/lock_lib.rb'
+    - 'test/convolution_test.rb'
+    - 'test/crt_test.rb'
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+Lint/AmbiguousRegexpLiteral:
+  Exclude:
+    - 'test/priority_queue_test.rb'
+Lint/AmbiguousRange:
+  Exclude:
+    - 'lib/convolution.rb'
+    - 'test/convolution_test.rb'
+    - 'test/crt_test.rb'
+    - 'test/lcp_array_test.rb'
+    - 'test/suffix_array_test.rb'
+    - 'test/z_algorithm_test.rb'
+Lint/AssignmentInCondition:
+  Exclude:
+    - 'lib/fenwick_tree.rb'
+    - 'lib/lazy_segtree.rb'
+    - 'lib/segtree.rb'
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: false
+Lint/MissingSuper:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/modint.rb'
+Lint/ParenthesesAsGroupedExpression:
+  AutoCorrect: false
+  Exclude:
+    - 'test/convolution_test.rb'
+    - 'test/crt_test.rb'
+Lint/ShadowingOuterLocalVariable:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/convolution.rb'
+    - 'lib/lcp_array.rb'
+    - 'lib/suffix_array.rb'
+    - 'test/convolution_test.rb'
+    - 'test/crt_test.rb'
+    - 'test/lcp_array_test.rb'
+    - 'test/example/suffix_array_and_lcp_array_practice.rb'
+Lint/Void:
+  AutoCorrect: false
+  Exclude:
+    - 'test/example/*'
+
+
+## Metrics
+
+Metrics:
+  Enabled: false
+
+
+## Naming
+
+Naming/FileName:
+  Exclude:
+    - 'lib_helpers/ac-library-rb.rb'
+    - 'lib_lock/ac-library-rb.rb'
+Naming/AccessorMethodName:
+  Exclude:
+    - 'lib/lazy_segtree.rb'
+    - 'lib/modint.rb'
+Naming/MethodName:
+  Exclude:
+    - 'lib/core_ext/modint.rb'
+    - 'lib/modint.rb'
+    - 'lib_lock/ac-library-rb/core_ext/modint.rb'
+    - 'test/convolution_test.rb'
+Naming/MethodParameterName:
+  Enabled: false
+Naming/VariableNumber:
+  Exclude:
+    - 'test/max_flow_test.rb'
+    - 'test/scc_test.rb'
+
+
+## Style
+
+Style/AccessModifierDeclarations:
+  Exclude:
+    - 'lib/deque.rb'
+Style/BlockDelimiters:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/convolution.rb'
+    - 'lib/lcp_array.rb'
+    - 'lib/suffix_array.rb'
+    - 'test/convolution_test.rb'
+    - 'test/crt_test.rb'
+    - 'test/lcp_array_test.rb'
+    - 'test/suffix_array_test.rb'
+    - 'test/z_algorithm_test.rb'
+Style/Documentation:
+  Enabled: false
+Style/EachForSimpleLoop:
+  Enabled: false
+Style/EmptyElse:
+  Exclude:
+    - 'test/segtree_test.rb'
+Style/FormatString:
+  Exclude:
+    - 'lib/convolution.rb'
+Style/GlobalVars:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/modint.rb'
+    - 'test/lazy_segtree_test.rb'
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Exclude:
+    - 'lib/lazy_segtree.rb'
+Style/IdenticalConditionalBranches:
+  Enabled: false
+Style/IfUnlessModifier:
+  Exclude:
+    - 'lib/crt.rb'
+    - 'lib/dsu.rb'
+    - 'lib/two_sat.rb'
+Style/InfiniteLoop:
+  Exclude:
+    - 'lib/floor_sum.rb'
+Style/InverseMethods:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/suffix_array.rb'
+Style/Lambda:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/HashSyntax:
+  Exclude:
+    - 'Rakefile'
+Style/MixinUsage:
+  Exclude:
+    - 'lib_helpers/ac-library-rb.rb'
+Style/MultipleComparison:
+  Enabled: false
+Style/NegatedIf:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/suffix_array.rb'
+Style/Not:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/suffix_array.rb'
+Style/NumericPredicate:
+  Enabled: false
+Style/OptionalArguments:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/segtree.rb'
+Style/ParallelAssignment:
+  Enabled: false
+Style/RedundantFileExtensionInRequire:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Style/RedundantReturn:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/convolution.rb'
+    - 'lib/crt.rb'
+    - 'lib/lcp_array.rb'
+    - 'lib/suffix_array.rb'
+    - 'lib/z_algorithm.rb'
+    - 'test/convolution_test.rb'
+    - 'test/lcp_array_test.rb'
+    - 'test/suffix_array_test.rb'
+    - 'test/z_algorithm_test.rb'
+Style/SelfAssignment:
+  AutoCorrect: false
+  Exclude:
+    - 'lib/convolution.rb'
+Style/Semicolon:
+  Exclude:
+    - 'lib/lazy_segtree.rb'
+    - 'test/lazy_segtree_test.rb'
+Style/SlicingWithRange:
+  Enabled: false
+Style/SpecialGlobalVars:
+  AutoCorrect: false
+  Exclude:
+    - 'test/example/convolution_practice.rb'
+    - 'test/example/crt.rb'
+Style/StringConcatenation:
+  Exclude:
+    - 'bin/lock_lib.rb'
+Style/StringLiterals:
+  Enabled: false
+Style/YodaCondition:
+  Enabled: false

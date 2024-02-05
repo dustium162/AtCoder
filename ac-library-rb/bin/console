@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+
+require_relative "../lib_helpers/ac-library-rb/all.rb"
+
+require "irb"
+IRB.start(__FILE__)
