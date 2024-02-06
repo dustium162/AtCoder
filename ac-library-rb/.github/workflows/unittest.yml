@@ -1,0 +1,29 @@
+name: Unittest
+
+on:
+  push:
+    paths-ignore:
+      - 'document_*/**/*'
+      - 'README.*'
+  pull_request:
+    paths-ignore:
+      - 'document_*/**/*'
+      - 'README.*'
+jobs:
+  unittest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        ruby: [2.7, 3.2]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: insall by bundler
+        run: bundle install
+      - name: run unittests
+        run: bundle exec ruby test/*.rb
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
