@@ -1,0 +1,1 @@
+puts ("a".."z").to_a[gets.to_i-97]
