@@ -1,0 +1,1 @@
+puts gets.to_i.to_s(2).chars.map{|d| d == "1" ? 2 : 0}.join
